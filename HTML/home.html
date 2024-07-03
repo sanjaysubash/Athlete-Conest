@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports News Home Page</title>
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Sports News</title>
+    <link rel="stylesheet" href="/CSS/home.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="images.jpeg" alt="Logo">
+            <img src="/ASSETS/ADRIN_transparent.png" alt="Logo">
+
         </div>
-        <div class="right-options">
-            <div class="option"><a href="/HTML/home.html">Home</a></div>
-            <div class="option"><a href="/HTML/events.html">Events</a></div>
-            <div class="option"><a href="/HTML/upload event.html">Upload Event</a></div>
-            <div class="option"><a href="/HTML/LOGIN HTML/index login.html">Login</a></div>
-        </div>
+        <nav>
+            <a href="/HTML/home.html" class="option">Home</a>
+            <a href="/HTML/events.html" class="option">Events</a>
+            <a href="/HTML/upload event.html" class="option">Upload Event</a>
+            <a href="/HTML/LOGIN HTML/login.html" class="option"><button>LOGIN</button></a>
+        </nav>
     </header>
     <main>
         <section class="top-news">
-            <h1>Top Sports News</h1>
-            <article>
-                <h2>Exciting Match Highlights</h2>
-                <p>Details about the latest thrilling sports events...</p>
-            </article>
+            <h1>Top News in Sports</h1>
+            <div class="news-ticker">
+                <ul id="ticker">
+                    <!-- News items will be dynamically added here -->
+                </ul>
+            </div>
+            <div class="news-article">
+                <article>
+                    <h2>Headline 1</h2>
+                    <img src="/ASSETS/athletics pos.jpeg" alt="News Image 1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida ex vel ipsum tempus, at lobortis libero consequat.</p>
+                </article>
+                <article>
+                    <h2>Headline 2</h2>
+                    <img src="/ASSETS/bb pos.jpeg" alt="News Image 2">
+                    <p>Sed euismod, dui vel suscipit ultricies, risus risus lacinia velit, id auctor dolor libero nec velit.</p>
+                </article>
+                <article>
+                    <h2>Headline 3</h2>
+                    <img src="/ASSETS/images.jpeg" alt="News Image 3">
+                    <p>Nulla facilisi. Vestibulum ac nunc auctor, ultrices dolor eu, molestie nisi. Donec id nisl sit amet libero varius ullamcorper.</p>
+                </article>
+            </div>
         </section>
     </main>
-    <script src="scripts.js"></script>
+    <script src="/JS/home.js"></script>
 </body>
 </html>

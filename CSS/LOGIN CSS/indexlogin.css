@@ -5,26 +5,43 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #3f5efb;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s ease;
+.login-container {
+    display: flex;
+    gap: 20px;
 }
 
-button:hover {
-    background-color: #364fc7;
+.login-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+    width: 200px;
+    transition: transform 0.3s;
 }
 
-button a {
+.login-card:hover {
+    transform: translateY(-10px);
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #3f5efb;
+}
+
+.login-card a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 16px;
+    background-color: #3f5efb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.login-card a:hover {
+    background-color: #364fc7;
 }

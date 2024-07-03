@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav {
+    margin-left: auto; /* Moves nav to the right */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, .current {
+    background-color: #555;
+}
+
+main {
+    padding: 10px;
+}
+
+/* Event details section */
+.event-details {
+    display: flex;
+    /* width: 100px;
+    height: 100px; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event-details .event-content {
+    position: relative;
+}
+
+.event-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.photo-gallery {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-container {
+    display:flex;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.event-description {
+    color: #555;
+}
+
+.event-location {
+    font-style: italic;
+    color: #888;
+}
+
+.contact-details {
+    font-size: 14px;
+    color: #777;
+}
