@@ -5,17 +5,16 @@ body {
     height: 100vh;
     background: linear-gradient(to right, #3f5efb, #fc466b);
     font-family: 'Arial', sans-serif;
-    margin: 0;
-}
+    margin: 0;}
 
 .container {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(251, 247, 247, 0.8);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
-    text-align: center;
+    
 }
 
 h1 {
@@ -28,45 +27,29 @@ label {
     margin-bottom: 8px;
     font-size: 14px;
     color: #333;
-    text-align: left;
 }
 
 input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #c2b4b4;
     border-radius: 5px;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background: #3f5efb;
+    background-color: #3f5efb;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 16px;
     cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background: #364fc7;
-}
-
-.links {
-    margin-top: 22px;
-}
-
-.links a {
-    display: block;
-    color: #3f5efb;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.links a:hover {
-    text-decoration: none;
-    color: #364fc7;
+    background-color: #364fc7;
 }

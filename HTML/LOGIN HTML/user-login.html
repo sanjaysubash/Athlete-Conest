@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/LOGIN CSS/organization-login.css">
-    <title>Organization Login</title>
+    <link rel="stylesheet" href="/CSS/LOGIN CSS/userlogin.css">
+    <title>USER LOGIN</title>
 </head>
 <body>
     <div class="container">
-        <form id="organizationLoginForm">
-            <h1>Organization Login</h1>
+        <form id="signupForm">
+            <h1>User Login</h1>
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
+            <a href="/HTML/LOGIN HTML/forgot-userpassword.html">forget password?</a>
+            <br><br>
             <button type="submit">Login</button>
-            <div class="links">
-                <a href="/HTML/LOGIN HTML/forgot-userpassword.html">Forgot Password or Username?</a>
-                <a href="/HTML/LOGIN HTML/neworganizationogin.html">Organization Signup</a>
-            </div>
-        </form>
+        </form><br>
+        <a href="/HTML/LOGIN HTML/newuserlogin.html">New user sign up</a><br><br>
     </div>
-    <script src="organization-login.js"></script>
+    <script src="JS/LOGINJS/userlogin.js"></script>
 </body>
 </html>

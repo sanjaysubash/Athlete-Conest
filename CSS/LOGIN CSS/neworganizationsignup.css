@@ -42,31 +42,16 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background: #3f5efb;
+    background-color: #3f5efb;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 16px;
     cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background: #364fc7;
-}
-
-.links {
-    margin-top: 22px;
-}
-
-.links a {
-    display: block;
-    color: #3f5efb;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.links a:hover {
-    text-decoration: none;
-    color: #364fc7;
+    background-color: #364fc7;
 }
