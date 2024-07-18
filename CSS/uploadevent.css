@@ -1,39 +1,38 @@
-/* Global styles */
+/* Basic styling for the upload event page */
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
 }
 
-.logo img {
-    height: 100px;
+header .logo img {
+    height: 50px;
+    margin-left: 20px;
 }
 
 nav {
-    margin-left: auto; /* Moves nav to the right */
+    margin-right: 20px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: background-color 0.3s;
+    margin: 0 10px;
 }
 
-nav a:hover, .current {
-    background-color: #555;
+nav a.current {
+    font-weight: bold;
 }
 
 main {
@@ -45,24 +44,22 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
 }
 
 .upload-event h1 {
-    color: #333;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.upload-event form label {
+.upload-event label {
     display: block;
-    margin-bottom: 8px;
-    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.upload-event form input[type="text"],
-.upload-event form textarea,
-.upload-event form input[type="file"] {
+.upload-event input[type="text"],
+.upload-event textarea,
+.upload-event input[type="file"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -71,31 +68,15 @@ main {
     box-sizing: border-box;
 }
 
-.upload-event form button {
-    padding: 10px 20px;
+.upload-event button[type="submit"] {
     background-color: #333;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: 3px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 4px;
 }
 
-.upload-event form button:hover {
+.upload-event button[type="submit"]:hover {
     background-color: #555;
-}
-.option button {
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    background-color: orangered; /* Sporty green color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.option button:hover {
-    background-color: #a06845; /* Darker shade on hover */
 }
