@@ -84,3 +84,18 @@ main {
 .upload-event form button:hover {
     background-color: #555;
 }
+.option button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: orangered; /* Sporty green color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option button:hover {
+    background-color: #a06845; /* Darker shade on hover */
+}

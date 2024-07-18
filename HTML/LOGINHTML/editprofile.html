@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/CSS/editprofilepage.login.css">
+</head>
+<body>
+    <div class="edit-profile-container">
+        <header class="edit-profile-header">
+            <h1>Edit Profile</h1>
+        </header>
+        <form id="editProfileForm" class="edit-profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="John Doe">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="johndoe@example.com">
+            
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture">
+            
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <script src="/JS/edit-profile.js"></script>
+</body>
+</html>
